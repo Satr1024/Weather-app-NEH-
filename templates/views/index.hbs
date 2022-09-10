@@ -1,0 +1,29 @@
+{{>header}}	
+
+	<div class="form">
+			<form action="/" method="post">
+				<input type="text" name="city" placeholder="City Name" required autocomplete="off"> 
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+		
+	<div class="box">
+
+		<div class="weatherimg">
+			<img src="http://openweathermap.org/img/wn/{{Source}}@2x.png">
+		</div>
+		<div class="info">
+			<div class="location">
+				<h2>{{City}}, {{Country}}</h2>
+				<p>time</p>
+			</div>
+			<div class="temp">
+				<h3>{{Temp}} <sup>o</sup> C</h3>
+			</div>
+		</div>
+
+	</div>
+
+	
+	
+{{>footer}}	

@@ -1,0 +1,101 @@
+*
+{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+body
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.box
+{
+	width: 400px;
+	height: max-content;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+}
+
+.info
+{
+	display: flex;
+	background-color: rgba(0,0,0,0.87);
+	color:white;
+	padding: 10px;
+	border:1px solid black;
+	justify-content: space-around;
+}
+.weatherimg
+{
+	text-align: center;
+	font-size: 5rem;
+	filter: drop-shadow(0px 0px 4px black);
+	border:1px solid black;
+}
+.form
+{
+margin-bottom: 20px;
+width: 400px;
+height: 40px;
+}
+
+.form input
+{
+width: 70%;
+height: 30px;
+border:1px solid rgba(0,0,0,0.4);
+padding-left:10px; 
+}
+
+.form button
+{
+width: 25%;
+height: 30px;
+font-size: 1.2rem;
+font-family: fantasy;
+border:none;
+background-color: black;
+color:white;
+}
+
+.tech
+{
+	margin-top: 20px;
+}
+
+
+@media only screen and (max-width:400px)
+{
+
+.box
+{
+	width: 96vw;
+	border-radius: 0px 0px;
+}	
+
+
+.info
+{
+	font-size: .7rem;
+}
+
+.form
+{
+	width: 90vw;
+	margin-bottom: 50px;
+}
+
+.form input
+{
+	width: 90%;
+}
+
+.form button
+{
+	width: 50%;
+}
+
+}
